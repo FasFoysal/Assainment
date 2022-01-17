@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/image 10.png" type="image/x-icon">
+    <link rel="stylesheet" href="java.js">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/js/all.min.js">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+
+    <title>ZEBO</title>
+</head>
+<body>
+    <!-- ................ -->
+    <style>
+        .ui-progressbar {
+          position: relative;
+          height: 100px;
+    background: aqua;
+        }
+        .progress-label {
+          position: absolute;
+          text-align: center;
+          margin: auto;
+          top: 4px;
+          font-weight: bold;
+          text-shadow: 1px 1px 0 #fff;
+          color: blueviolet;
+          font-size: 30px;
+          
+        }
+
+        @media only screen and (max-width:1150px){
+    .ui-progressbar {
+        height: 280px;
+    }
+    .progress-label {
+        font-size: 35px;
+    }
+}
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          var progressbar = $( "#progressbar" ),
+            progressLabel = $( ".progress-label" );
+       
+          progressbar.progressbar({
+            value: false,
+            change: function() {
+              progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+            },
+            complete: function() {
+              progressLabel.text( "incomplete! not support this screen..... open chrome browser turn on DESKTOP MODE " );
+            }
+          });
+       
+          function progress() {
+            var val = progressbar.progressbar( "value" ) || 0;
+       
+            progressbar.progressbar( "value", val + 2 );
+       
+            if ( val < 99 ) {
+              setTimeout( progress, 90 );
+            }
+          }
+       
+          setTimeout( progress, 2000 );
+        } );
+        </script>
+        <!-- ........................ -->
+
+    <div id="progressbar"><div class="progress-label">Loading...</div></div>
+
+        
+        
+    <section class="notallow" >
+    <section class="a_1_1" >
+
+        <div class="a_1_2">
+            <h1 style="font-size: 55px; color: #fff; " ><a href="https://fasfoysal.github.io/Assainment-1/">ZEBO.LK</a></h1>
+        </div>
+        <div class="a_1_3">
+            <ul>
+                <li><a href="https://www.bing.com/">LOGIN</a></li>
+                <li><a href="https://www.bing.com/">REGISTER</a></li>
+                <li><a href="https://www.bing.com/">POST AN AD</a></li>
+                <li>
+                    
+                    <form action="#">
+                        <input  id="inputnone" type="text" name="search" placeholder="scearch">
+                        <button class="show_1" onclick="myFunction()" type="submit">  <i class="fa fa-search" aria-hidden="true"></i> </button>
+                         <!-- <img style=" width: 22px; background-color: rgba(0, 0, 0, .4); " src="image/search-3-xxl.png" alt=""> -->
+                    </form> 
+                </li>
+               
+            </ul>
+            <!-- display="block"; -->
+            <script>
+         
+
+              function myFunction(){
+        document.getElementById("inputnone").style.display="block";
+       }
+            </script>
+        </div>
+    </section>
+    <!-- next part........... -->
+    <section class="b_1_1" >
+        <div class="b_1_2">
+            <ul>
+                <li><a href="https://www.bing.com/">HOME</a></li>
+                <li><a href="https://www.bing.com/">SERVICES</a></li>
+                <li><a href="https://www.bing.com/">BRAND VALUE</a></li>
+                <li><a href="https://www.bing.com/">WHY ZEBO</a></li>
+                <li><a href="https://www.bing.com/">CONTACT US</a></li>
+            </ul>
+        </div>
+ <!-- scearch bar section -->
+        <div class="wrapperx">
+            <div class="search-box">
+               <input type="text" placeholder="Search" class="inputx">
+               <div class="btnx">
+                 <i class="fa fa-search" aria-hidden="true"></i>
+               </div>
+            </div>
+          </div>
+          
+          <script>
+            $(".btnx").click(function(){
+    $(".inputx").toggleClass("active").focus;
+    $(this).toggleClass("animate");
+    $(".inputx").val("");
+  });
+        </script>
+  <!-- scearch bar section -->
+        <div class="b_1_3">
+            <h1 class="b_1_4" >FREE ONLINE CLASSIFIEDS </h1>
+           <button type="submit" > <h1 class="b_1_5" ><a href="https://fasfoysal.github.io/web-potfollio/">POST NOW</a></h1>
+           </button>
+        </div>
+    </section>
+  <!-- next..........   -->
+
+  <section class="x_1_1">
+    <div class="x_1_0">
+    <ul>
+        
+            <div class="uk-button-group">
+            
+                <div class="uk-inline">
+                    </button>  <li><i id="unik_1" class="fas fa-align-left"></i>   </span></button>
+                    <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+                        <ul class="uk-nav uk-dropdown-nav">
+                           <li><a href="https://www.amazon.com/">BAG </a></li>
+                           <li><a href="https://www.amazon.com/">, SCHOOL </a></li>
+                           <li><a href="https://www.amazon.com/">, CLASS </a></li>
+                           <li><a href="https://www.amazon.com/">, CAMPUS</a></li>
+                           <li><a href="https://www.amazon.com/">, EVERYTHING</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>      
+        </li>
+        <li  >  <input class="looking" type="text" name="search" placeholder="I'm looking For..." >
+        </li>
+
+        <li><i class="fas fa-map-marker-alt"></i></li>
+        <li  >  <input class="looking lookx " type="text" name="search" placeholder="Bangladesh                           |km" >
+
+      <li class="look_2" ><button style="margin-top: -3px;" type="submit" ><i class="fas fa-search"></i></button></li>
+    </ul>
+</div>
+
+  </section>
+<section>
+  <div class="c_1_1" >
+    <div class="c_1_2">
+        <h2>BRAND VLAUE</h2>
+        <h2>Enrich community engagement by breaking Barriers to connect</h2>
+    </div>
+
+
+    <div uk-filter="target: .js-filter">
+        <div class="c_1_3">
+
+            <ul class="uk-subnav uk-subnav-pill">
+                <button uk-filter-control=".all1" class="ALL" >ALL</button>
+                <button uk-filter-control=".CATEGORY11" class="CATEGORY1" >CATEGORY1</button>
+                <button  uk-filter-control=".CATEGORY22" class="CATEGORY2" >CATEGORY2</button>
+                <button  uk-filter-control=".CATEGORY33" class="CATEGORY3" >CATEGORY3</button>
+                <button  uk-filter-control=".CATEGORY44" class="CATEGORY4" >CATEGORY4</button>
+            </ul>
+            
+      </div>
+      <!-- ...... -->
+      <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+        <div class="all1 CATEGORY11 CATEGORY44">
+            <div class="c_1_4">
+                <div class="c_1_5">
+                    <a class="c_1_5_i" href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=cup&ref=nb_sb_noss_1&crid=1HH3DTJ00SLNV&sprefix=cup%2Caps%2C675"> <img src="image/download.png" alt=""> </a>
+                 <div class="C_1_5_x">
+                     <h3 class="c_1_5_h3"  >Product Ad7</h3>
+                     <h3 class="c_1_5_h3" >Product Ad7</h3>
+                     <h1 class="c_1_5_h1" >$25</h1>
+                 </div>
+                </div>
+             </div>
+        </div>
+       <!-- ....... -->
+      
+        <div class="c_1_4 all1 CATEGORY22">
+            <div class="c_1_5 ">
+                <a class="c_1_5_i" href="https://www.amazon.com/s?k=makeup&crid=NQQ8LFN2H1KG&sprefix=mak%2Caps%2C408&ref=nb_sb_ss_ts-doa-p_4_3"> <img src="image/download (1).png" alt=""> </a>
+             <div class="C_1_5_x">
+                 <h3 class="c_1_5_h3"  >Product Ad7</h3>
+                 <h3 class="c_1_5_h3" >Product Ad7</h3>
+                 <h1 class="c_1_5_h1" >$25</h1>
+             </div>
+            </div>
+          </div>
+      
+       <!-- ....... -->
+       <div class="c_1_4 all1 CATEGORY44 CATEGORY33 CATEGORY44 CATEGORY22">
+         <div class="c_1_5">
+             <a class="c_1_5_i" href="https://www.amazon.com/s?k=woman+dress&crid=39LKCA5UAGJ7C&sprefix=woman+dress%2Caps%2C539&ref=nb_sb_noss"> <img src="image/download (2).png" alt=""> </a>
+          <div class="C_1_5_x">
+              <h3 class="c_1_5_h3"  >Product Ad7</h3>
+              <h3 class="c_1_5_h3" >Product Ad7</h3>
+              <h1 class="c_1_5_h1" >$25</h1>
+          </div>
+         </div>
+       </div>
+       
+       <!-- ....... -->
+       <div class="c_1_4 CATEGORY11 all1 CATEGORY22 CATEGORY44">
+         <div class="c_1_5">
+             <a class="c_1_5_i" href="https://www.amazon.com/s?k=sunglasses&sprefix=sunglass%2Caps%2C379&ref=nb_sb_ss_ts-doa-p_1_8"> <img src="image/download (3).png" alt=""> </a>
+          <div class="C_1_5_x">
+              <h3 class="c_1_5_h3"  >Product Ad7</h3>
+              <h3 class="c_1_5_h3" >Product Ad7</h3>
+              <h1 class="c_1_5_h1" >$25</h1>
+          </div>
+    </div>
+   
+     </div>
+   
+   
+   <!-- ....... -->
+   <div class="c_1_4 all1 CATEGORY44 CATEGORY22">
+     <div class="c_1_5">
+         <a class="c_1_5_i" href="https://www.amazon.com/s?k=shoes&crid=2SIX1VZWACW7P&sprefix=shoes%2Caps%2C476&ref=nb_sb_noss"> <img src="image/download (4).png" alt=""> </a>
+      <div class="C_1_5_x">
+          <h3 class="c_1_5_h3"  >Product Ad7</h3>
+          <h3 class="c_1_5_h3" >Product Ad7</h3>
+          <h1 class="c_1_5_h1" >$25</h1>
+      </div>
+     </div>
+   </div>
+   <!-- ....... -->
+   <div class="c_1_4 CATEGORY44 all1">
+     <div class="c_1_5">
+         <a class="c_1_5_i" href="https://www.amazon.com/s?k=bracelets&crid=2J0DDW2EU0HFY&sprefix=brace%2Caps%2C1330&ref=nb_sb_ss_ts-doa-p_1_5"> <img src="image/download (5).png" alt=""> </a>
+      <div class="C_1_5_x">
+          <h3 class="c_1_5_h3"  >Product Ad7</h3>
+          <h3 class="c_1_5_h3" >Product Ad7</h3>
+          <h1 class="c_1_5_h1" >$25</h1>
+      </div>
+     </div>
+   </div>
+   <!-- ....... -->
+   <div class="c_1_4 CATEGORY44 all1 CATEGORY33">
+     <div class="c_1_5">
+         <a class="c_1_5_i" href="https://www.amazon.com/s?k=hand+bag&crid=2G1AVUKILMFUL&sprefix=hand+ba%2Caps%2C375&ref=nb_sb_noss"> <img src="image/download (6).png" alt=""> </a>
+      <div class="C_1_5_x">
+          <h3 class="c_1_5_h3"  >Product Ad7</h3>
+          <h3 class="c_1_5_h3" >Product Ad7</h3>
+          <h1 class="c_1_5_h1" >$25</h1>
+      </div>
+     </div>
+   </div>
+   <!-- ....... -->
+   <div class="c_1_4 all1 CATEGORY22">
+     <div class="c_1_5">
+         <a class="c_1_5_i" href="https://www.amazon.com/s?k=hand+watch&ref=nb_sb_noss"> <img src="image/download (7).png" alt=""> </a>
+      <div class="C_1_5_x">
+          <h3 class="c_1_5_h3"  >Product Ad7</h3>
+          <h3 class="c_1_5_h3" >Product Ad7</h3>
+          <h1 class="c_1_5_h1" >$25</h1>
+      </div>
+     </div>
+    </div>
+
+ </ul>
+ <div class="c_x_f">
+    <a href="https://www.amazon.com/">FOR MORE...</a>
+</div>
+ </div>
+</section>       
+<!-- ............new........ -->
+<section class="d_1_1" >
+    <div class="d_1_1_1">
+        <div class="uk-child-width-expand@s uk-text-center " uk-grid>
+            <div class="d_1_1_1">
+                <div class="uk-card uk-card-default uk-card-body d_1_2">
+    
+                    <i class="far fa-thumbs-up d_1_3"></i>
+    
+    
+                    <h3>SERVICE-1</h3>
+    
+    
+                    <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Contrary to popular belief,  making it over 2000 years old.</h4>
+    
+                </div>
+                <div class="d_1_1_1_f">
+                    <a href="https://en.wikipedia.org/wiki/LEMO">READ MORE</a>
+                </div>
+                
+            </div>
+            <div class="d_1_1_1">
+                <div class="uk-card uk-card-default uk-card-body d_1_2">
+    
+                    <i class="fas fa-code d_1_3"></i>
+    
+                    
+                        <h3>SERVICE-2</h3>
+                
+                    
+    
+    
+                    <h4>Lorem Ipsum is simply dummy text of the It has  classical Latin literature from 45 BC, making it over 2000 years old.</h4>
+                </div>
+                <div class="d_1_1_1_f">
+                    <a href="https://en.wikipedia.org/wiki/LEMOhttps://en.wikipedia.org/wiki/LEMO">READ MORE</a>
+                </div>
+                
+            </div>
+            <div class="d_1_1_1">
+                <div class="uk-card uk-card-default uk-card-body d_1_2">
+    
+                    <i class="fas fa-flag d_1_3"></i>
+    
+                        <h3>SERVICE-3</h3>
+                    
+    
+    
+                    <h4>Lorem Ipsum is simply dummy text Lorem Ipsum is not simply random text. making it over 2000 years old.</h4>
+                </div>
+                <div class="d_1_1_1_f">
+                    <a href="https://en.wikipedia.org/wiki/LEMOhttps://en.wikipedia.org/wiki/LEMO">READ MORE</a>
+                </div>
+                
+            </div>
+            <div class="d_1_1_1">
+                <div class="uk-card uk-card-default uk-card-body d_1_2">
+    
+                    <i class="fas fa-flask d_1_3"></i>
+    
+                    
+                        <h3>SERVICE-4</h3>
+                    
+                    
+    
+    
+                    <h4>Lorem Ipsum is simply dummy text of the printing and typesetting  classical Latin literature from 45 BC, making it over 2000 years old.</h4>
+                </div>
+                <div class="d_1_1_1_f">
+                     <a href="https://en.wikipedia.org/wiki/LEMO">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d_1_4">
+        <div class="d_2_5">
+            <h2>WHY ZEBO?</h2>
+            <p>the power to think and understand in a logical way.</p>
+        </div>
+        <div class="d_3_6">
+            <a href="https://en.wikipedia.org/wiki/Isyana_Sarasvati">EXPLORE ZEBO</a>
+        </div>
+    </div>
+    <div class="e_1_1">
+        <div class="e_2_1">
+            <ul style="margin-top:20px;" >
+                <li>
+                    
+                    <h3 style="color: blueviolet;">ZUBO.LK</h3>
+                </li>
+                <li>address line</li>
+                <li>email:  shounfoysal@gmail.com</li>
+                <li>phone:  +8801741731131</li>
+            </ul>          
+            <ul>
+                <li>
+                    <h4 style="color: blueviolet;">Audience Wants</h4>
+                </li>
+                <li>> Free</li>
+                <li>> Eesy to use</li>
+                <li>> Regular</li>
+                <li>> Rrach</li>
+            </ul>
+            <ul>
+                <li>
+                    <h4 style="color: blueviolet;">Ausience Cares</h4>
+                </li>
+                <li>> privace</li>
+                <li>> Fiexbility</li>
+                <li>Ease of Mind</li>
+            </ul>
+        </div>
+
+         <div class="f_1_1">
+        <div class="f_2_1">
+            <a href="https://www.facebook.com/profile.php?id=100004914072532"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://plus.google.com/100081181048999079886?fbclid=IwAR04yOizusKLhEnAbROUj-VqQiZaB-pLTEyPRiFtlXelT9XHyytnS39Fi5s"><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://twitter.com/FASFoysal?t=W7r01B60E4HnezKp4zd0aA&s=01"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/Foysal%20Ahamed%20Shoun?fbclid=IwAR05ZxB-rEmztTPzSl1ozUGt_bM9Lh-qivNbfcYjSO9oIvkYeAs6aQfZHZU"><i class="fab fa-instagram"></i></a>
+            <h5 style="color: #fff;" >2022 zeto.All Right Resolved</h5>
+        </div>
+    </div>
+    <div class="last">
+        
+    </div>
+    </div>
+   
+
+</section>
+<!-- hidden -->
+</section> 
+
+
+<!-- ........last........ -->
+<section class="hidden_2" >
+  <div uk-filter="target: .js-filter">
+    <ul class="uk-subnav uk-subnav-pill">
+        <a style="background-color: #fff;color: black;" uk-filter-control=".tag-white">White</button>
+        <a style="background-color: blue; color: #fff;"  uk-filter-control=".tag-blue">Blue</a>
+    <a style="background-color: black;color: #fff;"  uk-filter-control=".tag-black">Black</a>
+    </ul>
+    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+        <div class="tag-white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div class="tag-blue">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </div>
+        <div class="tag-white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div class="tag-white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div class="tag-black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </div>
+        <div class="tag-black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </div>
+        <div class="tag-blue">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </div>
+        <div class="tag-black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </div>
+        <div class="tag-blue">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </div>
+        <div class="tag-white">
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div class="tag-blue">
+            <div class="uk-card uk-card-primary uk-card-body">Item</div>
+        </div>
+        <div class="tag-black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </div>
+    </ul>
+</div>
+</section>
+</body>
+</html>
